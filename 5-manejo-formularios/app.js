@@ -31,8 +31,6 @@ document.getElementById('registroPokemon').addEventListener('submit', function(e
     }
 
 
-
-
     // verificar que el entrenador elija al dos horarios de entrenamiento
     if(horario.length != 2){
         alert("Debe elegir 2 horarios preferidos de entrenamiento")
@@ -44,7 +42,7 @@ document.getElementById('registroPokemon').addEventListener('submit', function(e
     const closingHour = 19;
 
     let hours = hora.split(":")
- 
+
 
     if(hours[0] > 19 || hours[0][1] < 7){
         alert("El gimnasio esta cerrado a esta hora. Por favor seleccione una hora entre las 7:00 AM y 7:00 PM.")
