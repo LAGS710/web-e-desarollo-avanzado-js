@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Entrenador Pokémon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Registro de Entrenadores Pokémon de la region de Hoenn</h1>
+  <form id="registroPokemon">
+    <label for="nombre">Nombre del Entrenador:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo del Entrenador:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="telefono">Pokéfon:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="origen">Selecciona tu Pueblo/Ciudad de origen:</label>
+    <select id="place" name="ciudad">
+    <option value="petalia">Ciudad Petalia</option>
+    <option value="ferrica">Ciudad Férrica</option>
+    <option value="azuliza">Pueblo Azuliza</option>
+    <option value="portual">Ciudad Portual</option>
+    <option value="verdegal">Pueblo Verdegal </option>
+    <option value="arborada">Ciudad Arborada</option>
+    <option value="pardal">Pueblo Pardal</option>
+    <option value="calagua">Ciudad Calagua</option>
+    <option value="algaria">Ciudad Algaria</option>
+    <option value="arrecipolis">Arrecípolis</option>
+    <option value="oromar">Pueblo Oromar</option>
+    <option value="colosalia">Ciudad Colosalia</option>
+    <option value="raiz">Villa Raíz</option>
+    <option value="escaso">Pueblo Escaso</option>
+  </select>
+
+    <label>Tipo de tu Pokémon inicial:</label>
+    <label><input type="radio" name="tipos" value="fuego"> Fuego</label>
+    <label><input type="radio" name="tipos" value="agua"> Agua</label>
+    <label><input type="radio" name="tipos" value="planta"> Planta</label>
+
+    <label>Horarios preferidos de Entrenamiento:</label>
+    <label><input type="checkbox" name="horario" value="mañana"> Mañana</label>
+    <label><input type="checkbox" name="horario" value="tarde"> Tarde</label>
+    <label><input type="checkbox" name="horario" value="noche"> Noche</label>
+
+    <label for="fecha">Fecha de la batalla contra el primer gimnasio:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="hora">Hora de la batalla:</label>
+    <input type="time" id="hora" name="hora" required>
+
+    <label for="archivo">Foto de tu Pokémon inicial:</label>
+    <input type="file" id="archivo" name="archivo">
+
+    <button type="submit">¡Registrarse para la Liga!</button>
+  </form>
+
+  <script src = "app.js"></script>
+</body>
+</html>
